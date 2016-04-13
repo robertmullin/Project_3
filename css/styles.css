@@ -1,0 +1,284 @@
+/* Styles Guide
+
+font-family: 'Roboto', sans-serif;
+
+font-family: 'Poppins', sans-serif;
+
+Color Pallette:
+
+Base:               #52A9BD
+Base light:         #217F95
+Base dark:          #074D5D
+Secondary light:    #CDE9F4
+
+*/
+
+
+/* --- BASE STYLES --- */
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+* {
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: url(../img/tile.jpg) top left repeat;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+p {
+    margin: 15px 0 15px 0;
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+    font-size: 1.125em;
+}
+
+#container {
+    max-width: 480px;
+    display: block;
+    margin: 0 auto;
+}
+
+#header {
+    background-color: #074D5D;
+    color: white;
+    font-size: 1.2em;
+    padding: 20px;
+}
+
+.bold {
+    width: 95%;
+    border-bottom: 5px solid #074D5D;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    padding: 0;
+}
+
+.fine {
+    width: 95%;
+    border-bottom: 2px solid #074D5D;
+    margin: 0 auto;
+    padding: 0;
+}
+
+#newsletter {
+    font-size: 1.6em;
+}
+
+#blurb {
+    text-align: center;
+    font-size: 1.2em;
+    color: #999;
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+
+#signup {
+    display: block;
+    margin: 0 auto;
+    padding: 19px 39px 18px 39px;
+    color: #fff;
+    background-color: #52A9BD;
+    font-size: 24px;
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+    width: 95%;
+}
+
+fieldset {
+    margin-bottom: 30px;
+    border: none;
+    padding-top: 25px;
+}
+
+.newsletter {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.heading {
+    text-align: left;
+    font-size: 1.4em;
+    font-weight: 700;
+    padding-top: 25px
+}
+
+/* --- FORM STYLES --- */
+
+form {
+    margin: 20px auto;
+    border-radius: 15px;
+    padding-top: 0px;
+}
+
+label {
+    color: #4d4d4d;
+    font-size: 1.125em;
+}
+
+input,
+textarea,
+select {
+    background-color: #e6e6e6;
+    color: #000;
+    margin-top: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="tel"],
+input[type="submit"],
+textarea,
+select {
+    border: none;
+    font-size: 1em;
+    margin-bottom: 30px;
+    width: 100%; 
+    height: 55px;
+    border-radius: 5px;
+    padding: 12px;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: 0;
+    background-color: #CDE9F4;
+    border: 3px solid #52A9BD;
+    transition: ease-in-out 0.5s;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    display: inline-block;
+    margin: 15px;
+}
+
+textarea {
+    height: auto;
+}
+
+#postal {
+    display: block;
+    width: 200px;
+}
+
+.footer {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: #999;
+    padding-top: 15px;
+    padding-bottom: 250px
+}
+
+/*  https://developer.mozilla.org/en-US/docs/Web/CSS/:-moz-placeholder  */
+
+::-webkit-input-placeholder {
+    color: #999;
+    text-align: right;
+}
+
+:-moz-placeholder { 
+    color: #999;
+    text-align: right; 
+}
+
+::-moz-placeholder {  
+    color: #999;
+    text-align: right;
+}
+
+:-ms-input-placeholder {  
+    color: #999;
+    text-align: right; 
+}
+
+
+/*---- TABLET MEDIA QUERIES ---*/
+
+@media screen and (min-width: 760px) {
+    
+    
+    #container {
+    max-width: 768px;
+    display: block;
+    margin: 0 auto;
+    }
+    
+    #blurb {
+        width: 90%;
+        padding-bottom: 50px;
+    }
+    
+    .bold,
+    .fine {
+        width: 97%;
+    }
+    
+    #header {
+        padding: 1px;
+    }
+    
+    #postal {
+    width: 380px;
+    }
+    
+    #signup {
+        width: 98%;
+    }
+}
+
+
+/*---- DESKTOP MEDIA QUERIES ---*/
+
+@media screen and (min-width: 960px) {
+    
+    
+    #container {
+    max-width: 960px;
+    display: block;
+    margin: 0 auto;
+    }
+    
+    #blurb {
+        width: 90%;
+        padding-bottom: 50px;
+    }
+    
+    .bold,
+    .fine {
+        width: 97%;
+    }
+    
+    #postal {
+    width: 480px;
+    }
+    
+    #signup {
+        width: 98%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
